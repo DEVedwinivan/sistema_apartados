@@ -1,0 +1,33 @@
+:root{
+    --color-primary: #980303;
+    --color-secondary: #021283;
+    --color-third: #BD169C;
+    --color-fourd: #FACDF0;
+    --color-fifth: #d9d9d9;
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+}
+
+.bienvenido{
+    background-color: var(--color-fourd);
+    padding: 20px;
+    border-radius: 8px;
+}
+.bienvenido h1{
+    color: var(--color-primary);
+}
+.bienvenido p strong{
+    color: var(--color-secondary);
+}
+.bienvenido a{
+    background-color: var(--color-third);
+    color: var(--color-fourd);
+    padding: 8px 13px;
+    border: 2px solid var(--color-third);
+    cursor: pointer;
+}
+.bienvenido a:hover{
+    background-color: transparent;
+    color: var(--color-third);
+    border: 2px solid var(--color-third);
+}
