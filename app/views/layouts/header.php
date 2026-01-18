@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/sidebar.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>assets/icons/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="shortcut icon" href="<?= BASE_URL ?>assets/img/svg/icon.svg" type="image/x-icon">
     <title>Regalos Irma</title>
 </head>
 <body>

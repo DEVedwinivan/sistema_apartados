@@ -13,11 +13,10 @@ body {
 
 /* Sidebar */
 #sidebar {
-    width: 250px;
+    width: 220px;
     height: 100vh;
-    background: ;
     color: var(--color-primary);
-    background-color: var(--color-fifth);
+    background-color: var(--color-light);
     position: fixed;
     left: 0;
     top: 0;
@@ -54,11 +53,15 @@ body {
     text-decoration: none;
     display: block;
     font-size: 16px;
+    padding: 5px;
+
 }
 
 .menu li a:hover {
-    background: rgba(255, 186, 186, 0.8);
+    background: var(--color-secondary);
     border-radius: 5px;
+    color: var(--color-light);
+    padding: 5px;
 }
 
 .logout {
@@ -67,7 +70,7 @@ body {
 
 /* Contenido */
 #content {
-    margin-left: 250px;
+    margin-left: 200px;
     padding: 20px;
     transition: 0.3s;
 }

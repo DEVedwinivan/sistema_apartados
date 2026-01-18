@@ -12,8 +12,9 @@
     background-color: var(--color-fourd);
     padding: 20px;
     border-radius: 8px;
+    width: 95%;
 }
-.bienvenido h1{
+.bienvenido h2{
     color: var(--color-primary);
 }
 .bienvenido p strong{
@@ -26,7 +27,35 @@
     border: 2px solid var(--color-third);
     cursor: pointer;
 }
-.bienvenido a:hover{
+.sn{
+    width: 95%;
+}
+.sn h2{
+    color: var(--color-secondary);
+    background-color: var(--color-fourd);
+    text-align: center;
+}
+
+.up{
+    width: 95%;
+}
+.up h2{
+    color: var(--color-secondary);
+    background-color: var(--color-fourd);
+    text-align: center;
+}
+
+
+
+.btns_home{
+    background-color: var(--color-third);
+    color: var(--color-fourd);
+    padding: 8px 13px;
+    border: 2px solid var(--color-third);
+    cursor: pointer;
+}
+
+.btns_home:hover{
     background-color: transparent;
     color: var(--color-third);
     border: 2px solid var(--color-third);

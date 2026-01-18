@@ -1,7 +1,7 @@
-<nav id="sidebar">
+<nav id="sidebar" class="shadow-sm">
     <div class="sidebar-header">
-
-        <h4>REGALOS IRMA</h4>
+        <img src="<?php echo BASE_URL; ?>/assets/img/ri.png" alt="Logo" class="logo-sidebar">
+        <h4 class="cursor-default">REGALOS IRMA</h4>
     </div>
 
     <ul class="menu">
