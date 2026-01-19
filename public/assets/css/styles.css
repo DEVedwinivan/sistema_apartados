@@ -45,8 +45,6 @@
     text-align: center;
 }
 
-
-
 .btns_home{
     background-color: var(--color-third);
     color: var(--color-fourd);
@@ -59,4 +57,17 @@
     background-color: transparent;
     color: var(--color-third);
     border: 2px solid var(--color-third);
+}
+
+.btn_product{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 8px 13px;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+.btn_product:hover{
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
 }
