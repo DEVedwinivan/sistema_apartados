@@ -25,7 +25,7 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
                     <div class="card-body">
                         <h5 class="card-title">Titulo</h5>
                         <p class="card-text">Descripción</p>
-                        <a href="#" class="btn">Ver Producto</a>
+                        <a href="#" class="btn btn_product w-100">Ver Producto</a>
                     </div>
                 </div>
                                 <div class="card" style="width: 18rem;">
@@ -33,7 +33,7 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
                     <div class="card-body">
                         <h5 class="card-title">Titulo</h5>
                         <p class="card-text">Descripción</p>
-                        <a href="#" class="btn">Ver Producto</a>
+                        <a href="#" class="btn btn_product w-100">Ver Producto</a>
                     </div>
                 </div>
         </div>
