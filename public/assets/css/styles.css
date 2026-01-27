@@ -1,3 +1,6 @@
+/*======================
+Colors Variables
+========================*/
 :root{
     --color-primary: #980303;
     --color-secondary: #021283;
@@ -7,7 +10,9 @@
     --color-light: #FFFFFF;
     --color-dark: #000000;
 }
-
+/*======================
+Page home styles
+========================*/
 .bienvenido{
     background-color: var(--color-fourd);
     padding: 20px;
@@ -71,3 +76,195 @@
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
 }
+
+/*======================
+Form login register user
+========================*/
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.form-container .container-form{
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow:0 5px 7px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.form-container .container-form .information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-fourd);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.form-container .container-form .information .info-childs{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.form-container .container-form .information .info-childs h2{
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.form-container .container-form .information .info-childs p{
+    margin: 15px 0;
+    color: var(--color-dark);
+}
+
+.form-container .container-form .information .info-childs input{
+    background-color: transparent;
+    border: solid 2px var(--color-primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color:var(--color-primary);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.form-container .container-form .information .info-childs input:hover{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+
+}
+
+.form-container .container-form .form-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: var(--color-light);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: column;
+}
+
+.form-container .container-form .form-information .form-information-childs{
+    padding: 0 30px;
+}
+
+.form-container .container-form .form-information .form-information-childs h2{
+    color:  var(--color-primary);
+    font-size: 2rem;
+}
+
+.form-container .container-form .form-information .form-information-childs p{
+    color: var(--color-dark);
+}
+
+.form-container .container-form .form-information .formCP{
+    margin: 30px 0 0 0;
+}
+
+.form-container .container-form .form-information .formCP label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: var(--color-fifth);
+    padding: 0 10px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .container-form .form-information .formCP  label input{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-fifth);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: var(--color-dark);
+}
+
+
+
+.form-container .container-form .form-information .formCP .submit{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 20px ;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-primary);
+}
+
+.form-container .container-form .form-information .formCP .submit:hover{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+} 
+
+.form-container .hide{
+    position: absolute;
+    transform: translateY(-300%);    
+}
+
+/*responsive*/
+
+@media screen and (max-width:750px) {
+    .form-container{
+        font-size: 12px;
+    }
+    .form-container .container-form{
+        height: auto;
+        flex-direction: column;
+    }
+    .form-container .container-form .information{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .form-container .container-form .form-information{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius:20px;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .form-container{
+        font-size: 10px;
+    }
+    .form-container .container-form{
+        height: auto;
+        flex-direction: column;
+    }
+    .form-container .container-form .information{
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+    .form-container .container-form .form-information{
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+    }
+
+} 
