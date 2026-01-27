@@ -4,8 +4,9 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
 ?>
 
 <main class="container" id="content">
-    <section class="">
-                    <div class="information">
+ <section class="form-container">
+        <section class="container-form iniciar">
+            <div class="information">
                 <div class="info-childs">
                     <h2>Bienvenido</h2>
                     <p>Tener una cuenta te da el privilegio de poder apartar productos. Si aún no tienes una cuenta registrate.</p>
@@ -17,6 +18,7 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
                     <h2>Iniciar sesión</h2>
                 <p>Coloca tus datos.</p>
                 </div>
+    
                 <form class="formCP" action="" method="post">
                     <label for="">
                         <input type="email" placeholder="Correo electrónico" name="emailL">
@@ -27,9 +29,11 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
                     <input class="submit" type="submit" value="Iniciar">
                 </form>
             </div>
-    </section>
-    <section>
-         <div class="information">
+        </section>
+    
+    
+         <section class="container-form registrar hide">
+            <div class="information">
                 <div class="info-childs">
                     <h2>Bienvenido</h2>
                     <p>Tener una cuenta te da el privilegio de poder apartar productos. Si ya tienes una cuenta inicia sesión.</p>
@@ -55,7 +59,7 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
                     <input class="submit" type="submit" value="Registrar">
                 </form>
             </div>
-        </div> 
+        </section>
     </section>
 </main>
 
