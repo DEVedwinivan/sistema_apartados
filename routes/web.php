@@ -1,4 +1,4 @@
 <?php
 $router->get('/', 'HomeController@index');
-$router->get('/iniciar', 'LoginController@login');
+$router->get('/iniciar', 'AuthController@login');
 ?>
