@@ -1,8 +1,4 @@
-<?php
-include_once ROOT . '/app/views/layouts/header.php';
-include_once ROOT . '/app/views/layouts/sidebar.php';
 
-?>
 <main class="container" id="content">
     <section class="bienvenido mx-auto mt-1 text-center">
         <h2 class="fs-1">Bienvenido a Regalos Irma</h2>
@@ -41,5 +37,4 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
 </main>
 <?php
 include ROOT . '/app/views/home/modal-info.php';
-include_once ROOT . '/app/views/layouts/footer.php';
 ?>

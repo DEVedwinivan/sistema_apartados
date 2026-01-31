@@ -1,7 +1,4 @@
-<?php
-include_once ROOT . '/app/views/layouts/header.php';
-include_once ROOT . '/app/views/layouts/sidebar.php';
-?>
+
 
 <main class="container" id="content">
  <section class="form-container">
@@ -62,7 +59,3 @@ include_once ROOT . '/app/views/layouts/sidebar.php';
         </section>
     </section>
 </main>
-
-<?php
-include_once ROOT . '/app/views/layouts/footer.php';
-?>
