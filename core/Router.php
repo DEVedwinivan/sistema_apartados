@@ -33,7 +33,8 @@ class Router {
             }
         } else {
             http_response_code(404);
-            echo "404 Not Found - The requested URL " . htmlspecialchars($url) . " was not found on this server.    ";
+            Views::render('errors/404');
+            // echo "404 Not Found - The requested URL " . htmlspecialchars($url) . " was not found on this server.    ";
         }
     }
 }
