@@ -5,9 +5,9 @@ class Router {
     public function get($url, $action){
         $this->routes['GET'][$url] = $action;
     }
-    // public function post($url, $action){
-    //     $this->routes['POST'][$url] = $action;
-    // }
+    public function post($url, $action){
+        $this->routes['POST'][$url] = $action;
+    }
 
     public function run(){
         $method = $_SERVER['REQUEST_METHOD'];
