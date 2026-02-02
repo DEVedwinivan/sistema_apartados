@@ -1,4 +1,6 @@
 <?php
 $router->get('/', 'HomeController@index');
-$router->get('/iniciar', 'AuthController@showLogin');
+
+$router->get('/iniciar', 'AuthController@showForm');
+$router->post('/iniciar', 'AuthController@login')
 ?>
