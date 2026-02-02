@@ -1,9 +1,10 @@
 <?php
 spl_autoload_register(function($class){
     $paths = [
-        ROOT . '/controllers/',
-        ROOT .'/models/',
-        ROOT .'../config/',
+        ROOT . '/app/controllers/',
+        ROOT . '/app/models/',
+        ROOT . '/core/',
+        ROOT .'/config/',
     ];
     foreach ($paths as $path) {
         $file = $path . $class . '.php';
