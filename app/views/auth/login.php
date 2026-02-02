@@ -1,6 +1,14 @@
-
-
 <main class="container" id="content">
+            <?php if (!empty($_SESSION['error'])): ?>
+            <div class="alert alert-danger text-center">
+                <?= $_SESSION['error']; unset($_SESSION['error']); ?>
+            </div>
+        <?php endif; ?>    
+        <?php if (!empty($_SESSION['success'])): ?>
+            <div class="alert alert-success text-center">
+                <?= $_SESSION['success']; unset($_SESSION['success']); ?>
+            </div>
+        <?php endif; ?>
  <section class="form-container">
         <section class="container-form iniciar">
             <div class="information">
@@ -13,10 +21,10 @@
             <div class="form-information ">
                 <div class="form-information-childs">
                     <h2>Iniciar sesión</h2>
-                <p>Coloca tus datos.</p>
+                    <p>Coloca tus datos.</p>
                 </div>
     
-                <form class="formCP" action="" method="post">
+                <form class="formCP" action="/iniciar" method="post">
                     <label for="">
                         <input type="email" placeholder="Correo electrónico" name="emailL">
                     </label>
