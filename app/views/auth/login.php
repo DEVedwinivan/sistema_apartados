@@ -25,10 +25,10 @@
                 </div>
     
                 <form class="formCP" action="/iniciar" method="post">
-                    <label for="">
+                    <label for="emailL">
                         <input type="email" placeholder="Correo electrónico" name="emailL">
                     </label>
-                    <label for="">
+                    <label for="passwordL">
                         <input type="password" placeholder="Contraseña" name="passwordL">
                     </label>
                     <input class="submit" type="submit" value="Iniciar">
@@ -50,17 +50,16 @@
                     <h2>Registrate</h2>
                 <p>Coloca tus datos.</p>
                 </div>
-                <form class="formCP" action="" method="post">
-                    <label for="">
+                <form class="formCP" action="/registrar" method="post">
+                    <label for="nombreR">
                         <input type="text" placeholder="Nombre de usuario" name="nombreR">
                     </label>
-                    <label for="">
+                    <label for="emailR">
                         <input type="email" placeholder="Correo electrónico" name="emailR">
                     </label>
-                    <label for="">
-                        <input type="password" placeholder="Contraseña" name="contraR">
+                    <label for="passwordR">
+                        <input type="password" placeholder="Contraseña" name="passwordR">
                     </label>
-                    <input type="text" name="rolR" value="user" hidden>
                     <input class="submit" type="submit" value="Registrar">
                 </form>
             </div>
