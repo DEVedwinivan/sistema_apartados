@@ -190,8 +190,6 @@ Form login register user
     color: var(--color-dark);
 }
 
-
-
 .form-container .container-form .form-information .formCP .submit{
     background-color: var(--color-primary);
     color: var(--color-light);
@@ -214,6 +212,29 @@ Form login register user
     position: absolute;
     transform: translateY(-300%);    
 }
+
+/*=========
+Styles errors
+===========*/
+
+.error_title{
+    color: var(--color-primary);
+    
+}
+
+.btn_errors{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 8px 13px;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
+.btn_errors:hover{
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
 
 /*responsive*/
 
