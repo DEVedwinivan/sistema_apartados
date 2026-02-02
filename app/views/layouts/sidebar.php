@@ -7,8 +7,8 @@
     <ul class="menu">
         <li><a href="<?= BASE_URL ?>"><i class="bi bi-house"></i> Inicio</a></li>
         <li><a href="<?= BASE_URL ?>iniciar"><i class="bi bi-person-vcard"></i> Iniciar Sesión</a></li>
-        <li><a href="<?= BASE_URL ?>apartados/mis_apartados"><i class="bi bi-cart"></i> Mis apartados</a></li>
-        <li><a href="<?= BASE_URL ?>products/productos"><i class="bi bi-box-seam"></i> Productos</a></li>
+        <li><a href="<?= BASE_URL ?>mis_apartados"><i class="bi bi-cart"></i> Mis apartados</a></li>
+        <li><a href="<?= BASE_URL ?>productos"><i class="bi bi-box-seam"></i> Productos</a></li>
         <li><a href="<?= BASE_URL ?>privacidad"><i class="bi bi-file-earmark-lock"></i>Privacidad</a></li>
         <!-- Apardado de administrador -->
         <li><a href="<?= BASE_URL ?>admin/usuarios"><i class="bi bi-people"></i>Usuarios</a></li>
