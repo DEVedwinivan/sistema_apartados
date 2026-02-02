@@ -18,6 +18,16 @@ Class AuthModel {
         }
         return $user;
     }
+
+    public function register(array $data): bool{
+        $stmt = $this->db->prepare("INSERT INTO usuarios (nombre, email, password, rol) VALUES (:nombre, :email, :password, 'cliente')");
+
+        return $stmt->execute([
+            'nombre' => $data['nombre'],
+            'email' => $data['email'],
+            'password' => password_hash($data['password'], PASSWORD_DEFAULT)
+        ]);
+    }
 }
 
 
