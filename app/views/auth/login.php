@@ -25,18 +25,18 @@
                 </div>
     
                 <form class="formCP" action="/iniciar" method="post">
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf_token ?? '') ?>">
                     <label for="emailL">
-                        <input type="email" placeholder="Correo electrónico" name="emailL">
+                        <input type="email" placeholder="Correo electrónico" name="emailL" required>
                     </label>
                     <label for="passwordL">
-                        <input type="password" placeholder="Contraseña" name="passwordL">
+                        <input type="password" placeholder="Contraseña" name="passwordL" required>
                     </label>
                     <input class="submit" type="submit" value="Iniciar">
                 </form>
             </div>
         </section>
-    
-    
+
          <section class="container-form registrar hide">
             <div class="information">
                 <div class="info-childs">
@@ -51,14 +51,15 @@
                 <p>Coloca tus datos.</p>
                 </div>
                 <form class="formCP" action="/registrar" method="post">
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf_token ?? '') ?>">
                     <label for="nombreR">
-                        <input type="text" placeholder="Nombre de usuario" name="nombreR">
+                        <input type="text" placeholder="Nombre de usuario" name="nombreR" required minlength="2" maxlength="100">
                     </label>
                     <label for="emailR">
-                        <input type="email" placeholder="Correo electrónico" name="emailR">
+                        <input type="email" placeholder="Correo electrónico" name="emailR" required>
                     </label>
                     <label for="passwordR">
-                        <input type="password" placeholder="Contraseña" name="passwordR">
+                        <input type="password" placeholder="Contraseña" name="passwordR" required minlength="6">
                     </label>
                     <input class="submit" type="submit" value="Registrar">
                 </form>
