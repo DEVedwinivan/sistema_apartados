@@ -32,9 +32,29 @@ class Router {
                 $controller->$methodName();
             }
         } else {
-            http_response_code(404);
-            Views::render('errors/404');
-            // echo "404 Not Found - The requested URL " . htmlspecialchars($url) . " was not found on this server.    ";
+            $allowedMethods = [];
+            foreach ($this->routes as $routeMethod => $routesByMethod) {
+                if (isset($routesByMethod[$url])) {
+                    $allowedMethods[] = $routeMethod;
+                }
+            }
+
+            if (!empty($allowedMethods)) {
+                http_response_code(405);
+                header('Allow: ' . implode(', ', $allowedMethods));
+                Views::render('errors/error_http', [
+                    'status_code' => 405,
+                    'title' => 'Método no permitido',
+                    'message' => 'El método HTTP utilizado no está permitido para esta ruta.'
+                ]);
+            } else {
+                http_response_code(404);
+                Views::render('errors/error_http', [
+                    'status_code' => 404,
+                    'title' => 'Página no encontrada',
+                    'message' => 'La página solicitada no existe o fue movida.'
+                ]);
+            }
         }
     }
 }
