@@ -7,9 +7,10 @@ $router->post('/registrar', 'AuthController@register');
 $router->get('/logout', 'AuthController@logout');
 
 //Rutas de administrador
-$router->get('/admin/usuarios', 'AdminController@usuarios');
-$router->get('/admin/usuarios/editar', 'AdminController@editarUsuario');
-$router->post('/admin/usuarios/update', 'AdminController@updateUser');
-$router->post('/admin/usuarios/eliminar', 'AdminController@eliminarUsuario');
-
+$router->get('/admin/usuarios', 'UsersController@usuarios');
+$router->get('/admin/usuarios/editar', 'UsersController@editarUsuario');
+$router->post('/admin/usuarios/update', 'UsersController@updateUser');
+$router->post('/admin/usuarios/eliminar', 'UsersController@eliminarUsuario');
+$router->get('/admin/subir_producto', 'UploadproductsController@formProductos');
+$router->post('/admin/upload_products', 'UploadproductsController@uploadProduct');
 ?>
