@@ -1,10 +1,10 @@
 <main class="container mt-4">
   <?php if (isset($_GET['deleted'])): ?>
-    <div class="alert alert-success" role="alert">Usuario eliminado correctamente.</div>
+    <div class="alert alert-success text-center" role="alert">Usuario eliminado correctamente.</div>
   <?php elseif (isset($_GET['updated'])): ?>
-    <div class="alert alert-success" role="alert">Usuario actualizado correctamente.</div>
+    <div class="alert alert-success text-center" role="alert">Usuario actualizado correctamente.</div>
   <?php elseif (isset($_GET['error'])): ?>
-    <div class="alert alert-danger" role="alert">Ocurrió un error. Inténtalo de nuevo.</div>
+    <div class="alert alert-danger text-center" role="alert">Ocurrió un error. Inténtalo de nuevo.</div>
   <?php endif; ?>
   <section class="d-flex justify-content-center w-100">
     <table id="usuariosTable" class="table table-striped table-bordered w-100">

@@ -20,7 +20,7 @@
                     <img src="" class="card-img-top" alt="Nombre">
                     <div class="card-body">
                         <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Descripción</p>
+                        <p class="card-text">Descripción <br> $1000</p>
                         <a href="#" class="btn btn_product w-100">Ver Producto</a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <img src="" class="card-img-top" alt="Nombre">
                     <div class="card-body">
                         <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Descripción</p>
+                        <p class="card-text">Descripción <br> $1000</p>
                         <a href="#" class="btn btn_product w-100">Ver Producto</a>
                     </div>
                 </div>
