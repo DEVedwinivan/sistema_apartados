@@ -93,7 +93,7 @@ class UploadproductsController {
             
             // Generar nombre único y seguro
             $uniqueName = uniqid('product_', true) . '.' . $extension;
-            $uploadDir = __DIR__ . '/../../storage/uploads/';
+            $uploadDir = __DIR__ . '/../../public/assets/uploads/';
             
             // Crear directorio si no existe
             if (!is_dir($uploadDir)) {
