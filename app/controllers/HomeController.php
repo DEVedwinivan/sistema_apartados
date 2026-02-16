@@ -1,7 +1,9 @@
 <?php 
 class HomeController {
     public function index() {
-        Views::render('home/index');
+        $productosModel = new UploadproductsModel();
+        $productos = $productosModel->getAllProducts();
+        Views::render('home/index', ['productos' => $productos]);
     }
 }
 ?>

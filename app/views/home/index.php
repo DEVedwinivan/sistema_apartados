@@ -16,22 +16,16 @@
     <section class="up mx-auto mt-5 mb-5">
         <h2>Ultimos Productos</h2>
         <div class="productos d-flex flex-wrap justify-content-center gap-4 mt-4">
+            <?php foreach ($productos as $producto): ?>
                 <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="Nombre">
+                    <img src="<?= BASE_URL ?>assets/uploads/<?= htmlspecialchars($producto['imagen']) ?>" class="card-img-top" alt="<?= htmlspecialchars($producto['nombre']) ?>">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Descripción <br> $1000</p>
-                        <a href="#" class="btn btn_product w-100">Ver Producto</a>
+                        <h5 class="card-title"><?= htmlspecialchars($producto['nombre']) ?></h5>
+                        <p class="card-text"><?= nl2br(htmlspecialchars($producto['descripcion'])) ?><br> $<?= number_format($producto['precio'], 2) ?></p>
+                        <a href="#" class="btn btn_product w-100">Apartar producto</a>
                     </div>
                 </div>
-                                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="Nombre">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Descripción <br> $1000</p>
-                        <a href="#" class="btn btn_product w-100">Ver Producto</a>
-                    </div>
-                </div>
+            <?php endforeach; ?>
         </div>
     </section>
 </main>
