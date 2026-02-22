@@ -13,4 +13,7 @@ $router->post('/admin/usuarios/update', 'UsersController@updateUser');
 $router->post('/admin/usuarios/eliminar', 'UsersController@eliminarUsuario');
 $router->get('/admin/subir_producto', 'UploadproductsController@formProductos');
 $router->post('/admin/upload_products', 'UploadproductsController@uploadProduct');
+$router->get('/admin/inventario', 'InventoryController@ShowInventory');
+$router->get('/admin/inventario/editar', 'InventoryController@editarProducto');
+$router->post('/admin/inventario/update', 'InventoryController@updateProducto');
 ?>
