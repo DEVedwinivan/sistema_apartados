@@ -7,7 +7,7 @@
     <div class="alert alert-danger text-center" role="alert">Ocurrió un error. Inténtalo de nuevo.</div>
   <?php endif; ?>
   <section class="d-flex justify-content-center w-100">
-    <table id="usuariosTable" class="table table-striped table-bordered w-100">
+    <table id="GenericTable" class="table table-striped table-bordered w-100">
       <thead>
         <tr>
           <th>ID</th>
@@ -25,11 +25,11 @@
             <td><?= htmlspecialchars($usuario['email']) ?></td> 
             <td><?= htmlspecialchars($usuario['creado_en']) ?></td>
             <td>
-              <button class="btn btn-sm btn-primary editarUsuarioBtn" onclick="location.href='/admin/usuarios/editar?id=<?= $usuario['id'] ?>'">Editar</button>
+              <button class="btn btn-sm btn-primary" onclick="location.href='/admin/usuarios/editar?id=<?= $usuario['id'] ?>'">Editar</button>
               <form class="d-inline" method="POST" action="/admin/usuarios/eliminar" onsubmit="return confirm('¿Seguro que deseas eliminar este usuario?');">
                 <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrf_token ?? '') ?>">
                 <input type="hidden" name="id" value="<?= htmlspecialchars($usuario['id']) ?>">
-                <button type="submit" class="btn btn-sm btn-danger eliminarUsuarioBtn">Eliminar</button>
+                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
               </form>
 
             </td>   
