@@ -168,4 +168,62 @@ Class InventoryController{
         
         return null;
     }
+    public function desactivarProducto(){
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST['id'] ?? null;
+            $csrfToken = $_POST['csrf_token'] ?? null;
+
+            if (!$this->isValidCsrf($csrfToken)) {
+                header('Location: /admin/inventario?error=csrf');
+                return;
+            }
+
+            if (!$id || !is_numeric($id)) {
+                header('Location: /admin/inventario?error=validation');
+                return;
+            }
+
+            if ($this->model->deactivateProduct((int)$id)) {
+                header('Location: /admin/inventario?success=deactivated');
+            } else {
+                header('Location: /admin/inventario?error=deactivate');
+            }
+        } else {
+            http_response_code(405);
+            Views::render('errors/error_http', [
+                'status_code' => 405,
+                'title' => 'Método no permitido',
+                'message' => 'Solo se permiten solicitudes POST para esta acción.'
+            ]);
+        }
+    }
+    public function activarProducto(){
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST['id'] ?? null;
+            $csrfToken = $_POST['csrf_token'] ?? null;
+
+            if (!$this->isValidCsrf($csrfToken)) {
+                header('Location: /admin/inventario?error=csrf');
+                return;
+            }
+
+            if (!$id || !is_numeric($id)) {
+                header('Location: /admin/inventario?error=validation');
+                return;
+            }
+
+            if ($this->model->activateProduct((int)$id)) {
+                header('Location: /admin/inventario?success=activated');
+            } else {
+                header('Location: /admin/inventario?error=activate');
+            }
+        } else {
+            http_response_code(405);
+            Views::render('errors/error_http', [
+                'status_code' => 405,
+                'title' => 'Método no permitido',
+                'message' => 'Solo se permiten solicitudes POST para esta acción.'
+            ]);
+        }
+    }
 }
