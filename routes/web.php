@@ -16,4 +16,6 @@ $router->post('/admin/upload_products', 'UploadproductsController@uploadProduct'
 $router->get('/admin/inventario', 'InventoryController@ShowInventory');
 $router->get('/admin/inventario/editar', 'InventoryController@editarProducto');
 $router->post('/admin/inventario/update', 'InventoryController@updateProducto');
+$router->post('/admin/inventario/desactivar', 'InventoryController@desactivarProducto');
+$router->post('/admin/inventario/activar', 'InventoryController@activarProducto');
 ?>
