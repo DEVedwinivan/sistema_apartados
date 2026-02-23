@@ -27,6 +27,14 @@ class InventoryModel{
         $stmt = $this->db->prepare($sql);
         return $stmt->execute($values);
     }
+    public function deactivateProduct(int $id): bool{
+        $stmt = $this->db->prepare("UPDATE productos SET activo = 0 WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
+    public function activateProduct(int $id): bool{
+        $stmt = $this->db->prepare("UPDATE productos SET activo = 1 WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
 }
 
 ?>
