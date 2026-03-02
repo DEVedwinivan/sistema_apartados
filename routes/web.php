@@ -11,6 +11,7 @@ $router->get('/admin/usuarios', 'UsersController@usuarios');
 $router->get('/admin/usuarios/editar', 'UsersController@editarUsuario');
 $router->post('/admin/usuarios/update', 'UsersController@updateUser');
 $router->post('/admin/usuarios/eliminar', 'UsersController@eliminarUsuario');
+$router->get('/admin/dashboard', 'DashController@index');
 $router->get('/admin/subir_producto', 'UploadproductsController@formProductos');
 $router->post('/admin/upload_products', 'UploadproductsController@uploadProduct');
 $router->get('/admin/inventario', 'InventoryController@ShowInventory');
